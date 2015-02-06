@@ -3,12 +3,16 @@ package lab2;
 import javax.swing.JOptionPane;
 
 /**
- * Describe responsibilities here.
+ * This class implements the Courseable interface and is for Intro to 
+ * Programming Courses.
+ * It has methods to get and set the courseName, courseNumer, and number of 
+ * credits that the course is worth. It also validates the information  that is 
+ * entered for the course number, name, and credits. 
  *
- * @author      your name goes here
+ * @author      Emma Kordik
  * @version     1.00
  */
-public class IntroToProgrammingCourse {
+public class IntroToProgrammingCourse implements Courseable {
     private String courseName;
     private String courseNumber;
     private double credits;
@@ -18,10 +22,12 @@ public class IntroToProgrammingCourse {
         this.setCourseNumber(courseNumber);
     }
 
+    @Override
     public String getCourseNumber() {
         return courseNumber;
     }
 
+    @Override
     public final void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
@@ -31,10 +37,12 @@ public class IntroToProgrammingCourse {
         this.courseNumber = courseNumber;
     }
 
+    @Override
     public double getCredits() {
         return credits;
     }
 
+    @Override
     public void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {
             JOptionPane.showMessageDialog(null,
@@ -44,10 +52,12 @@ public class IntroToProgrammingCourse {
         this.credits = credits;
     }
 
+    @Override
     public String getCourseName() {
         return courseName;
     }
 
+    @Override
     public final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,

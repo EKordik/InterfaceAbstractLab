@@ -6,23 +6,47 @@
 package lab1;
 
 /**
- *Runs the courses
+ * Demonstrates that the AdvancedJavaCourse Class, IntroJavaCourse Class and 
+ * IntroProgrammingCourse Class.
  * 
- * @author Emmma Kordik
+ * This class instantiate  instances of each of these objects and prints out 
+ * the information entered about them.
+ * 
+ * @author Emma Kordik
  */
+
 public class StartUp {
      public static void main(String[] args){
+         
         AdvancedJavaCourse advJava = new AdvancedJavaCourse("Advanced Java", "183-150");
         IntroJavaCourse introJava = new IntroJavaCourse("Intro to Java", "183-154");
         Course introProgramming = new IntroToProgrammingCourse
                 ("Intro to Programming", "183,150");
         
+        /**
+         * Using the Liskov Substitution principle in this context did not seem 
+         * very beneficial for any classes except the IntroProgramming class. 
+         * Since the other two classes, AdvancedJavaCourse and IntroJavaCourse
+         * both have prerequisite methods which are not in the abstract class
+         * Courses, to have used the Liskov Substitution principle and declared 
+         * those objects as Course objects would not have allowed the use of those
+         * methods which were needed.
+         * 
+         * It seems that the Liskov substitution principle is best when the subclasses
+         * have no addition methods which are not contained in the superclass.
+         */
+        
+        //Sets prerequisites for the Advanced Java and Intro to Java Courses
         advJava.setPrerequisites("Intro to Java");
         introJava.setPrerequisites("Intro to Programming");
         
-         System.out.println("Advanced Java: " + advJava.getCourseName() + " " + 
+        //Displays the Course information
+         System.out.println(advJava.getCourseName() + " " + 
                  advJava.getCourseNumber() + " " + advJava.getPrerequisites());
-         System.out.println("Intro to Java: ");
+         System.out.println(introJava.getCourseName() + " " + 
+                 introJava.getCourseNumber() + " " + introJava.getPrerequisites());
+         System.out.println(introProgramming.getCourseName() + " " + 
+                 introProgramming.getCourseNumber());
         
     }
 }

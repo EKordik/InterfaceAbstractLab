@@ -3,9 +3,10 @@ package lab1;
 import javax.swing.JOptionPane;
 
 /**
- * Inherits from the Course class
- * Sets a String prerequisites for Advanced Java Course and allows you to get the course name capitalized 
- *
+ * Inherits from the course class and is for an Advanced Java Course.
+ * This class has methods to set and get the prerequisites for Advanced Java
+ * It also has a method that prints the name out in capital letters
+ * 
  * @author      Emma Kordik
  * @version     1.00
  */

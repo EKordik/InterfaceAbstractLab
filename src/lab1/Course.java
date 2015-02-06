@@ -8,13 +8,15 @@ package lab1;
 import javax.swing.JOptionPane;
 
 /**
- * Stores course names, numbers, and the credits for any courses. 
- *also, provides methods to get these properties and set these methods, 
+ * This abstract class is a template to build course classes off of.
+ * It stores course names, numbers, and the credits and it  
+ * also, provides methods to get these properties and set these methods, 
  * validating that the information to be stored in each variable is valid information
  * 
  * @author      Emma Kordik
  * @version     1.00
  */
+
 public abstract class Course {
     private String courseName;
     private String courseNumber;

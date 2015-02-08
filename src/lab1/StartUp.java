@@ -7,10 +7,18 @@ package lab1;
 
 /**
  * Demonstrates that the AdvancedJavaCourse Class, IntroJavaCourse Class and 
- * IntroProgrammingCourse Class.
- * 
+ * IntroProgrammingCourse Class. 
  * This class instantiate  instances of each of these objects and prints out 
  * the information entered about them.
+ * 
+ * The classes in this program inherit from an abstract class. This means that 
+ * code which they all share can be written once instead of three times which
+ * could be a benefit. But it also locks the program down. The set credit method
+ * is the one that perhaps would be done differently in a different course. The
+ * verification processed used in it makes a course have to have between 0.5 and 
+ * 4 credits. If you add a course later on that has, say six credits or no credits
+ * you are stuck with this verification and either have to edit the code that
+ * that point or not inherit from the Course class. Neither option is ideal. 
  * 
  * @author Emma Kordik
  */

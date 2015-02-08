@@ -7,7 +7,7 @@ package lab2;
 
 /**
  * This Course template includes methods for setting the course name, 
- * course number and the credits as well as getters for each of these varialbles.
+ * course number and the credits as well as getters for each of these variables.
  * The setCredits method accepts a double as an argument. The setCourseName and
  * setCourseNumber methods accept Strings as objects.
  * 

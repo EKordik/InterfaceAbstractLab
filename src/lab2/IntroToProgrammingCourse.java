@@ -5,8 +5,9 @@ import javax.swing.JOptionPane;
 /**
  * This class implements the Courseable interface and is for Intro to 
  * Programming Courses.
+ * 
  * It has methods to get and set the courseName, courseNumer, and number of 
- * credits that the course is worth. It also validates the information  that is 
+ * credits that the course is worth. It also validates the information that is 
  * entered for the course number, name, and credits. 
  *
  * @author      Emma Kordik

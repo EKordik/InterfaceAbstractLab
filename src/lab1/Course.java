@@ -13,6 +13,9 @@ import javax.swing.JOptionPane;
  * also, provides methods to get these properties and set these methods, 
  * validating that the information to be stored in each variable is valid information
  * 
+ * It also has a method that returns the name in capitol letters in case you 
+ * need this.
+ * 
  * @author      Emma Kordik
  * @version     1.00
  */
@@ -22,6 +25,7 @@ public abstract class Course {
     private String courseNumber;
     private double credits;
    
+    //Setters for the Course Number, Course Name, & Credits
     public final void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
@@ -48,6 +52,7 @@ public abstract class Course {
         this.credits = credits;
     }
     
+    //Getters for the Course Name, Course Number, and Credits
     public final String getCourseName() {
         return courseName;
     }
@@ -59,6 +64,11 @@ public abstract class Course {
     public final double getCredits() {
         return credits;
     }
+    
+    //Returns a capitalized version of the course name
 
+    public final String getCapitalizedCourseName() {
+        return getCourseName().toUpperCase();
+    }
    
 }

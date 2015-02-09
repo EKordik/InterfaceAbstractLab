@@ -8,6 +8,7 @@ package lab2;
 /**
  * This is the start up class to demonstrate how the AdvancedJavaCourse, 
  * IntroJavaCourse, and IntroToProgrammingCourse classes work.
+ * 
  * This program inherits from an interface. The benefits this provides is flexibility
  * and yet at the same time structure. Each class is forced to have methods for 
  * setting and getting the course name, course number, and credits of that course.
@@ -15,7 +16,7 @@ package lab2;
  * verification of the information stored and has the potential for ease of 
  * expansion. The down side is that code, which is basically the same for each
  * class has to be rewritten three times in this program, thus making more work
- * for the programmer. However, I think the benefits outweigh the downsides.
+ * for the programmer. However, I think the benefits outweighs the down sides.
  * 
  * @author Emma Kordik
  * @version     1.00
@@ -31,13 +32,15 @@ public class StartUp {
                 "Introduction to Programming", "180-152");
         
         /**
-         * The Liskov Substitution principle can be used for the IntroToProgrammingCourse
-         * class since every method in that class is defined in the interface.
+         * The Liskov Substitution principle can be used for the 
+         * IntroToProgrammingCourse class since every method in that class is 
+         * defined in the interface.
+         * 
          * It cannot be used for the other two class, AdvancedJavaCourse and
          * IntroJavaCourse because both of those have addition methods (the 
          * prerequisite methods). To use the Liskov Substitution Principle would 
-         * render these methods inaccessible and they are methods that need accessed
-         * and used.
+         * render these methods inaccessible and they are methods that need 
+         * accessed and used.
          */
         
         //Sets prerequisites for the Advanced Java and Intro to Java Courses

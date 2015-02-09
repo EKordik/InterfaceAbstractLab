@@ -11,18 +11,11 @@ import javax.swing.JOptionPane;
  * @version     1.00
  */
 public class AdvancedJavaCourse extends Course {
-    private String courseName;
-    private String courseNumber;
-    private double credits;
     private String prerequisites;
 
     public AdvancedJavaCourse(String courseName, String courseNumber) {
         setCourseName(courseName);
         setCourseNumber(courseNumber);
-    }
-
-    public String getCapitalizedCourseName() {
-        return getCourseName().toUpperCase();
     }
 
 

@@ -18,12 +18,14 @@ package lab2;
  */
 public interface Courseable {
     
+    //Setters
     public void setCredits(double credits);
     
     public void setCourseName(String courseName);
     
     public void setCourseNumber(String courseNumber);
     
+    //Getters
     public double getCredits();
     
     public String getCourseNumber();

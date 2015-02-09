@@ -3,7 +3,8 @@ package lab2;
 import javax.swing.JOptionPane;
 
 /**
- * This class is for Intro to Java Courses and it implements courseable.
+ * This class is for Intro to Java Courses and it implements Courseable.
+ * 
  * It has methods to set and get the course name, course number, credit amount,
  * and any prerequisites for the course. It also validates that the the credits 
  * entered, name entered, and course number entered are valid.

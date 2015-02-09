@@ -3,7 +3,7 @@ package lab2;
 import javax.swing.JOptionPane;
 
 /**
- *  * This class is for Advanced Java Courses and it implements courseable.
+ * This class is for Advanced Java Courses and it implements Courseable.
  * It has methods to set and get the course name, course number, credit amount,
  * and any prerequisites for the course. It also validates that proper 
  * information is entered for each variable.
